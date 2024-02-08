@@ -29,10 +29,10 @@ public static class Operations {
         };
     }
 
-    public static bool IsValid(string value) =>
-        value == Insert ||
-        value == Update ||
-        value == Delete;
+    public static bool IsValid(string value)
+    {
+        return value == Insert || value == Update || value == Delete;
+    }
 
     public enum Enumeration {
         Insert,
